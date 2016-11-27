@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="@dimen/widget_memo_dialog_listitem_margin" >
+
+    <ImageButton
+        android:id="@+id/imageButton_widget_priority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@android:drawable/btn_star_big_off" />
+
+    <TextView
+        android:id="@+id/textView_widget_memoitem_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textSize="@dimen/memoitem_title_text_size" />
+
+</LinearLayout>

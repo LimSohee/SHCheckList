@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SH CheckList</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- menu -->
+    <string name="menu_share">Share</string>
+    <string name="menu_sort">Sort</string>
+    <string name="menu_all_select">All Select</string>
+    <string name="menu_all_deselect">All Deselect</string>
+            
+    <!-- activity_main -->
+ 	<string name="memo_complete_button">Complete</string>
+	<string name="check_count">00/00</string>
+	<string name="memolist_title">MemoList</string>
+	<string name="sucess_import">Import complete.</string>	
+	<string name="sucess_export">.txt Export complete.</string>	
+	<string name="fail_import">A format that can not be recalled. (Data Type: Status Check|CheckBox Text|description)</string>	
+	
+	<!-- activity_check -->
+    <string name="checklist_complete_button">Complete</string>
+    <string name="checklist_modify_button">Modify</string>
+    <string name="search_checkitem_text_edittext">Enter the CheckBox Text to search.</string>
+    <string name="add_checkitem_text_edittext">Enter the CheckBox Text to insert.</string>
+    <string name="checklist_modifymode_title_editText">Enter a memo title.</string>
+    <string name="checklist_alertdialog_positivebutton">Yes</string>
+    <string name="checklist_alertdialog_negativebutton">No</string>
+    <string name="checklist_new_memo_cancel_message">Are you sure you want to cancel the [Insert a new memo]?</string>
+    <string name="checklist_modify_cancel_message">Are you sure you want to cancel [Modify]?</string>
+    
+	<!-- listitem_memo -->
+
+
+	<!-- listitem_check -->
+
+
+	<!-- dialog_sort -->
+	<string name="asc_radioButton">Ascending</string>
+	<string name="desc_radioButton">Descending</string>
+	<string name="ok_sort_button">OK</string>
+	<string name="cancel_sort_button">Cancel</string>
+	<string-array name="sort_standard_array">
+		<item>Created order</item>
+		<item>CheckBox Text</item>
+		<item>Status Check</item>
+	</string-array>
+	
+	<!-- dialog_description -->
+	<string name="ok_description_button">OK</string>
+	<string name="cancel_description_button">Cancel</string>
+	<string name="copy_clipboard_button">Copy</string>	
+	<string name="completed_copy_to_clipboard">Completed copy to clipboard</string>	
+		
+	<!-- dialog_explorer -->
+	<string name="explorer_nodata">No Data</string>
+	<string name="folder_read_not">folder can\'t be read!</string>	
+	<string name="extension_not">Text file(.txt) is not.</string>	
+
+
+	<!-- widget -->
+	<string name="widget_list_loading">Loading...</string>			
+	<string name="widget_other_memo_button">Other Memo</string>	
+	<string name="widget_app_launcher_button">App Launcher</string>		
+
+	<!-- Share -->
+	<string name="share_title">Share</string>
+</resources>

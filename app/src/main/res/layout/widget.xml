@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="@color/activity_background_color" >
+
+    <RelativeLayout
+        android:id="@+id/layout_widget_checklist_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/title_background_color" >
+
+        <TextView
+            android:id="@+id/textView_wiget_checklist_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+			android:padding="@dimen/title_padding"
+            android:textColor="@color/title_text_color"
+            android:textSize="@dimen/checklist_viewmode_title_text_size"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+		android:id="@+id/layout_widget_bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:padding="@dimen/bottom_menu_padding"
+		android:layout_alignParentBottom="true" >
+        
+		<Button
+		    android:id="@+id/btn_open_memo_dialog"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+			android:background="@color/button_background_color"
+			android:textColor="@color/button_text_color"
+		    android:text="@string/widget_other_memo_button" />
+		    
+		<Button
+		    android:id="@+id/btn_open_memo_activity"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+			android:background="@color/button_background_color"
+			android:textColor="@color/button_text_color"
+		    android:text="@string/widget_app_launcher_button" />
+	
+	</RelativeLayout>
+
+	<ListView
+		android:id="@+id/listView_widget_checklist"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/widget_checklist_height"
+		android:layout_above="@id/layout_widget_bottom_menu"
+		android:layout_below="@id/layout_widget_checklist_title" />
+
+	<TextView
+		android:id="@+id/textView_widget_checklist_empty"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/widget_checklist_height"
+		android:gravity="center"
+		android:text="데이터가 없습니다."
+		android:textSize="@dimen/widget_empty_text_size"
+		android:layout_above="@id/layout_widget_bottom_menu"
+		android:layout_below="@id/layout_widget_checklist_title"
+		android:visibility="gone" />
+
+</RelativeLayout>

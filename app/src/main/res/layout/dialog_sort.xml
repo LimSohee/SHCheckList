@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+	android:layout_margin="@dimen/sort_dialog_margin"
+    android:orientation="vertical" >
+
+    <Spinner
+        android:id="@+id/spinner_sort_standard"
+        android:layout_width="@dimen/dialog_sort_width"
+        android:layout_height="wrap_content"
+		android:layout_margin="@dimen/sort_dialog_margin"
+        android:layout_gravity="center_horizontal" />
+
+	<RadioGroup
+	    android:id="@+id/radioButton_sort_dirction"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_horizontal"
+		android:layout_margin="@dimen/sort_dialog_margin"
+	    android:orientation="horizontal" >
+
+	    <RadioButton
+	        android:id="@+id/radioButton_asc"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:checked="true"
+	        android:text="@string/asc_radioButton" />
+
+	    <RadioButton
+	        android:id="@+id/radioButton_desc"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="@string/desc_radioButton" />
+
+	</RadioGroup>
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_horizontal" >
+
+		<Button
+		    android:id="@+id/button_sort_ok"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+			android:background="@color/button_background_color"
+			android:textColor="@color/button_text_color"
+			android:layout_margin="@dimen/sort_dialog_margin"
+		    android:text="@string/ok_sort_button" />
+
+		<Button
+		    android:id="@+id/button_sort_cancel"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+			android:background="@color/button_background_color"
+			android:textColor="@color/button_text_color"
+			android:layout_margin="@dimen/sort_dialog_margin"
+		    android:text="@string/cancel_sort_button" />
+
+	</LinearLayout>
+
+</LinearLayout>

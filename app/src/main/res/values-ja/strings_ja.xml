@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SHCheckList</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- menu -->
+    <string name="menu_share">共有する</string>
+    <string name="menu_sort">並べ替え</string>
+    <string name="menu_all_select">すべて選択</string>
+    <string name="menu_all_deselect">すべて解除</string>
+            
+    <!-- activity_main -->
+ 	<string name="memo_complete_button">完了</string>
+	<string name="check_count">00/00</string>
+	<string name="memolist_title">メモリスト</string>
+	<string name="sucess_import">読み込み完了</string>	
+	<string name="sucess_export">.txt エクスポートの完了</string>	
+	<string name="fail_import">読み込むことができない形式です。 （Data形式：チェック状態| CheckBoxテキスト|説明）</string>	
+	
+	<!-- activity_check -->
+    <string name="checklist_complete_button">完了</string>
+    <string name="checklist_modify_button">編集</string>
+    <string name="search_checkitem_text_edittext">検索する項目の名前を入力してください。</string>
+    <string name="add_checkitem_text_edittext">追加する項目の名前を入力してください。</string>
+    <string name="checklist_modifymode_title_editText">メモのタイトルを入力してください。</string>
+    <string name="checklist_alertdialog_positivebutton">はい</string>
+    <string name="checklist_alertdialog_negativebutton">いいえ</string>
+    <string name="checklist_new_memo_cancel_message">[新しいメモを追加]をオフにしますか？</string>
+    <string name="checklist_modify_cancel_message">[編集]をオフにしますか？</string>
+    
+	<!-- listitem_memo -->
+
+
+	<!-- listitem_check -->
+
+
+	<!-- dialog_sort -->
+	<string name="asc_radioButton">昇順</string>
+	<string name="desc_radioButton">降順</string>
+	<string name="ok_sort_button">確認</string>
+	<string name="cancel_sort_button">キャンセル</string>
+	<string-array name="sort_standard_array">
+		<item>生成順序</item>
+		<item>項目名前順</item>
+		<item>チェックするかどうかの順</item>
+	</string-array>
+	
+	<!-- dialog_description -->
+	<string name="ok_description_button">確認</string>
+	<string name="cancel_description_button">キャンセル</string>
+	<string name="copy_clipboard_button">コピー</string>	
+	<string name="completed_copy_to_clipboard">クリップボードにコピー完了</string>	
+		
+	<!-- dialog_explorer -->
+	<string name="explorer_nodata">データがありません。</string>	
+	<string name="folder_read_not">フォルダを読めません!</string>	
+	<string name="extension_not">テキストファイル（.txt）ではない。</string>	
+
+
+	<!-- widget -->
+	<string name="widget_list_loading">ロード中...</string>		
+	<string name="widget_other_memo_button">他のノート</string>	
+	<string name="widget_app_launcher_button">App実行</string>		
+	
+	<!-- Share -->
+	<string name="share_title">共有する</string>
+</resources>

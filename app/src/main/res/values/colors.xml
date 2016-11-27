@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="activity_background_color">#FFFFFFFF</color>
+    <color name="title_background_color">#03A9F4</color>
+    <color name="title_text_color">#FFFFFF</color>
+    <color name="button_background_color">#03A9F4</color>
+    <color name="button_text_color">#FFFFFF</color>
+    <color name="listitem_text_color">#000000</color>
+
+    <color name="progressbar_background_color">#FFDCDCDC</color>
+    <color name="progressbar_color">#03A9F4</color>
+</resources>

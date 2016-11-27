@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/layout_checklist_top_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/layout_checklist_modifymode_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/title_margin_bottom"
+            android:background="@color/title_background_color" >
+
+            <EditText
+                android:id="@+id/editText_checklist_modifymode_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:hint="@string/checklist_modifymode_title_editText" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_checklist_viewmode_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/title_padding"
+            android:background="@color/title_background_color" >
+
+            <TextView
+                android:id="@+id/textView_checklist_viewmode_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/title_text_color"
+                android:textSize="@dimen/checklist_viewmode_title_text_size"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_checkitem_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/top_menu_padding" >
+
+            <ImageButton
+                android:id="@+id/button_checkitem_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/add_selector" />
+
+            <EditText
+                android:id="@+id/editText_add_checkitem_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/button_checkitem_add"
+                android:hint="@string/add_checkitem_text_edittext" >
+         	    <requestFocus />
+         	 </EditText>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_checkitem_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/top_menu_padding" >
+
+            <EditText
+                android:id="@+id/editText_search_checkitem_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:hint="@string/search_checkitem_text_edittext" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/layout_checklist_bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_checklist_complete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/button_background_color"
+            android:textColor="@color/button_text_color"
+            android:visibility="gone"
+            android:padding="@dimen/bottom_menu_padding"
+            android:text="@string/checklist_complete_button" />
+
+        <Button
+            android:id="@+id/button_checklist_modify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/button_background_color"
+            android:textColor="@color/button_text_color"
+            android:padding="@dimen/bottom_menu_padding"
+            android:text="@string/checklist_modify_button" />
+
+    </LinearLayout>
+    
+    <ListView
+        android:id="@+id/listView_checklist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/layout_checklist_bottom_menu"
+        android:layout_below="@id/layout_checklist_top_menu"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
